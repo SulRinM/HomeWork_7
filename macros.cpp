@@ -1,4 +1,4 @@
-﻿/*
+/*
 *	В этом задании мы используем некоторые изученные нами препроцессорные директивы
 
 	В вашей программе:
@@ -23,9 +23,11 @@
 	#error Attention! define MODE
 #endif
 
-int add(int a, int b) {
-	return a + b;
-}
+#if MODE == 1
+	int add(int a, int b) {
+		return a + b;
+	}
+#endif
 
 int main()
 {
